@@ -74,6 +74,7 @@ document.querySelector(".searchBar").addEventListener("keyup", function (event) 
 
 document.querySelector(".searchIcon").addEventListener("click", function () 
   {
+    x.style.display="flex";
     weather.search();
   }
 );
