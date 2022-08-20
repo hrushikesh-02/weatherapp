@@ -29,9 +29,7 @@ let weather={
           
           if(temp>40)
           {
-            // bg.style.background="linear-gradient(120deg,#ff9900,#fda949)";
-             bg.style.background="#d9381e";
-             
+             bg.style.background="#d9381e";  
           }
           else if(temp>30){
             bg.style.background="#ff9900";
@@ -42,7 +40,6 @@ let weather={
           }
           else
           {
-              //bg.style.background="linear-gradient(45deg,#33ccff,#4ca1af)";
             bg.style.background="#00ffff";
           }
           document.querySelector(".city").innerText = name ;
