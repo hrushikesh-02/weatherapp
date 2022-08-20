@@ -29,7 +29,7 @@ let weather={
           
           if(temp>40)
           {
-             bg.style.background="#d9381e";  
+             bg.style.background="#EB681A";  
           }
           else if(temp>30){
             bg.style.background="#ff9900";
@@ -40,7 +40,7 @@ let weather={
           }
           else
           {
-            bg.style.background="#00ffff";
+            bg.style.background="#63e5ff";
           }
           document.querySelector(".city").innerText = name ;
           document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
