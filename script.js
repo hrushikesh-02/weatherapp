@@ -26,17 +26,24 @@ let weather={
           const { icon, description } = data.weather[0];
           const { temp, humidity } = data.main;
           const { speed } = data.wind;
-         
-          if(temp>30)
+          
+          if(temp>40)
           {
             // bg.style.background="linear-gradient(120deg,#ff9900,#fda949)";
-             bg.style.background="#ff9900";
+             bg.style.background="#d9381e";
              
+          }
+          else if(temp>30){
+            bg.style.background="#ff9900";
+          }
+          else if(temp>20)
+          {
+            bg.style.background="#33ccff";
           }
           else
           {
               //bg.style.background="linear-gradient(45deg,#33ccff,#4ca1af)";
-              bg.style.background="#33ccff";
+            bg.style.background="#00ffff";
           }
           document.querySelector(".city").innerText = name ;
           document.querySelector(".icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
